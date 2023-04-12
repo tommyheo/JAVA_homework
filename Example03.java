@@ -1,35 +1,21 @@
-import java.util.Scanner;
 
 public class Example03 {
 
 	public static void main(String[] args) {
+		int i = 1;	//while조건의 초기값
+		int mul = 1;
 		
-		/* 조건문 switch */
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("점수를 입력하세요");
-		int Jumsu = sc.nextInt();
-		
-		
-		switch (Jumsu / 10) {	// 10으로 나눠서 94의 일의 자리를 소수점으로 만들어버린다
-		case 9  : case 10 : 	// value의 값이 정수이므로 십의 자리가 9일 때는 "A"를 출력해달라는 명령
-			System.out.println("A");
-			break;
+		while(i<=10) {
 			
-		case 8 :
-			System.out.println("B");
-			break;
+			if(i%2==1) {		//홀수일 때
+				mul *= i;
+			} else if(i%2==0){	//짝수일 때
+				mul *= (-i);
+			}
 			
-		case 7 : 
-			System.out.println("C");
-			break;
-			
-		default : 
-			System.out.println("판단불가");
+			i++;
 		}
-		
-		
-		
+		System.out.print(mul);
 
 	}
 
