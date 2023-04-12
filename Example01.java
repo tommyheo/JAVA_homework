@@ -2,18 +2,24 @@
 public class Example01 {
 
 	public static void main(String[] args) {
-		
-		System.out.printf("10 == 10.0f \t %b\n" , 10 == 10.0f);
-		System.out.printf("'0' ==0 \t %b\n", '0' == 0);
-		System.out.printf("'\\0' == 0 \t %b\n", '\0' == 0);
-		System.out.printf("'A' == 65 \t %b\n", 'A' == 65);
-		System.out.printf("'A' > 'B' \t %b\n", 'A' > 'B');
-		System.out.printf("'A' + 1 != 'B' \t %b\n", 'A' + 1 != 'B');
-		
-		
-		System.out.println('\uAC00');	//유니코드표기법. // 역슬래쉬u + 유니코드로 표현 \
-		
-		
+		// TODO Auto-generated method stub
+		/*
+		 * shift 연산자
+		 * left shift(0으로 채움) / right shift(sign bit로 채움) / unsigned right shift 연산자(0으로 채워짐)
+		 * 2의 n승으로 곱하거나 나눈 결과를 반환.
+		 * 곱셈, 나눗셈보다 빠름	 
+		 *  x << n은 x*2의 n승과 같다.
+		 *  x >> n은 x/2의 n승과 같다.
+		 *  shift 연산자는 덧셈연산자보다 우선순위가 낮다.
+		 *  논리연산자보다 우선순위가 낮다
+		 *  
+		 *  
+		 *  &: ampersand / 앤퍼센트
+		 *  &&: AND연산자
+		 *  | : vertical bar / 버티컬바
+		 *  || : or연산자
+		 *  ! : 부정연산자
+		 */
 	}
 
 }
