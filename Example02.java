@@ -1,40 +1,76 @@
+import java.util.Scanner;
 
 public class Example02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		/*
-		 * 삼항연산자 - ? :
-		 * 조건식의 연산결과가
-		 * true이면 '식1'의 결과를 반환하고
-		 * false이면 '식2'의 결과를 반환한다.
+		 *	조건문 : if
+		 *	조건이 만족되면 수행
+		 *
+		 * 	조건문 : if - else
+		 * 	조건이 만족하면 if 실행문 실행 
+		 * 	만족하지 않으면 else 실행문 실행
 		 * 
-		 *  (조건식)?식1:식2
+		 * 	조건문 : if - else if -else
+		 * 	조건2 만족하면 조건2의 실행문 실행
+		 * 	만족하지 않으면 else의 실행문 실행
+		 * 
 		 */
 		
-		boolean power = false;	// power의 초기값
-		char answer = (power == true) ? 'y' : 'n';
-		System.out.println(answer);
+		// if-else if-else 예제
 		
-		int x = 5;	
-		String answer2 = (x % 2 == 0) ? "짝수"  : "홀수";		// String 참조형 변수
-		System.out.println(answer2);
+		int a = 89;
+		
+		if ( a > 60 ) {
+			System.out.println( "합격" );
+		} else if ( a >= 50 ) {		// a >= 50 && a < 60를 의미
+			System.out.println( "예비" );
+		} else {	// 0 ~ 50
+			System.out.println( "불합격" );
+		}
 		
 		
-		int y = -10;
-		int absY = y >= 0 ? y : -y;
-		System.out.println(absY);	// 10 -> 절대값을 구하는 핵심 알고리즘
+		/*
+		 *	# 유저에게 값을 받아오는 함수
+		 *	Scanner sc = new Scanner(System.in);	// Scanner타입(참조타입)의 데이터인 sc		//
+		 *	sc.nextInt();	// int의 값으로 인지하고 가져오는 것 
+		 */
 		
-		int score = 50;
-		char grade = score >= 90 ? 'A' : (score >= 80 ? 'B' : 'C');  // 90이상이면 A 80이상 90미만이면 B 그이외에는 C
-		System.out.println(grade);	
 		
-		int score2 = 99;
-		String result = (score2 >= 90) ? "out" : (score2 >= 80 ? "in" : "out");
-		String result2 = (score2 >= 80 && score2 <= 90) ? "in" : "out";
-		System.out.println(result);
-		System.out.println(result2);
 		
-	}
-
+		Scanner sc = new Scanner(System.in);	//사용시 import java.util.Scanner를 써야 적용이 된다
+		System.out.println("점수를 입력하세요");
+		int jumsu = sc.nextInt();	//sc.next(); //sc.nextLine() //sc.nextFloat()
+		// 입력값을 int형 데이터로 가져와달라는 명령
+		
+		
+		
+		if(jumsu >= 90) {
+			System.out.println("A");
+		} else if (jumsu >= 80) {
+			System.out.println("B");
+		} else if (jumsu >= 70) {
+			System.out.println("C");
+		} else if (jumsu >= 60) {
+			System.out.println("D");
+		} else {
+			System.out.println("F");
+		}
+	
+		sc.close();
+		
+		if(jumsu >= 90) {
+			System.out.println("A");
+		} else if (jumsu >= 80) {
+			System.out.println("B");
+		} else if (jumsu >= 70) {
+			System.out.println("C");
+		} else if (jumsu >= 60) {
+			System.out.println("D");
+		} else {
+			System.out.println("F");
+		}
+		
+	}	
 }

@@ -2,24 +2,48 @@
 public class Example01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		/*
-		 * shift 연산자
-		 * left shift(0으로 채움) / right shift(sign bit로 채움) / unsigned right shift 연산자(0으로 채워짐)
-		 * 2의 n승으로 곱하거나 나눈 결과를 반환.
-		 * 곱셈, 나눗셈보다 빠름	 
-		 *  x << n은 x*2의 n승과 같다.
-		 *  x >> n은 x/2의 n승과 같다.
-		 *  shift 연산자는 덧셈연산자보다 우선순위가 낮다.
-		 *  논리연산자보다 우선순위가 낮다
-		 *  
-		 *  
-		 *  &: ampersand / 앤퍼센트
-		 *  &&: AND연산자
-		 *  | : vertical bar / 버티컬바
-		 *  || : or연산자
-		 *  ! : 부정연산자
+		 *	# 반복문
+		 *		반복문은 동일한 문장을 여러 번 반복하는 제어문 
 		 */
+		
+		// 1 ~ 15까지 출력
+		
+		for (int a = 1; a <= 15; a++) {
+			System.out.println(a);	// 1 ~ 15까지 출력~!
+		}
+		
+		// 고길동 20번 출력
+		
+		String name = "고길동";
+		
+		for(int i = 1; i <= 20; i++) {
+			System.out.println(i + "번쨰 : " + name);		//1 ~ 20번째 : 고길동
+		}
+		
+		// 0 ~ 119까지 출력
+		
+		for(int j = 0; j < 120; j++) {
+			System.out.println(j);
+		}
+		
+		// 숫자 고희동 숫자+3 출력
+		
+		for(int k = 0; k < 120; k++) {
+			System.out.println(k + " 고희동 " + (k+3));
+		}
+		
+		// "예" 5번 출력(증감연산 사용)
+		
+		for(int l = 5; l > 0; l--) {
+			System.out.println("예");
+		}
+		
+		
+		
+		
+		
+		
 	}
-
 }
