@@ -1,16 +1,14 @@
-import java.util.Scanner;
 
 public class Practice04 {
 
 	public static void main(String[] args) {
-		Scanner a = new Scanner(System.in);
-		System.out.println("자연수를 입력하세요.");
-		int Number = a.nextInt();
 		
-		if(Number % 2 ==0) {
-			System.out.println("짝수입니다.");
-		} else {
-			System.out.println("홀수입니다.");
+		int i, j;
+		for (i = 2; i <= 9; i++) {
+			System.out.println(i+ " 단");
+			for (j = 1; j <= 9; j++) {
+				System.out.println(i + " X " + j + " = " + (i*j));
+			}
 		}
 
 	}
