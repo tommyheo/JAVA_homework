@@ -3,18 +3,21 @@ public class Example02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int i = 5, j = 5;
-		System.out.println(i++);	//5
-		System.out.println(j--);	//5
-		System.out.println("i = " + i + ", j = " + j);	//i = 6, j = 4
-		
-		/* 
-		 *  ++i = 먼저 증가시킨 후 출력
-		 * 	i++ = 출력 후 증가
+
+		/*
+		 * left shift(0으로 채움)/right shift(sign bit로 채움)
+		 * unsigned right shift 연산자(0으로 채워짐)
 		 * 
-		 * # 전위형 = 값이 참조되기 전에 증가
-		 * # 후위형 = 값이 참조된 후에 증가
-		 */
+		 * 2n으로 곱하거나 나눈 결과를 반환
+		 * 
+		 * 곱셈, 나눗셈보다 빠름
+		 * 
+		 * x << n은 n*2n승과 같다.
+		 * x >> n은 x/2n승과  같다.
+		 * 
+		 * 
+		 * */
+		
 	}
 
 }
