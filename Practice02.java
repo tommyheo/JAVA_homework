@@ -2,39 +2,20 @@
 public class Practice02 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		int a = 0;
-		for(int i = 1; i <= 100; i++) {		// 1~100까지 숫자
-			if(i % 2 == 1) {	//그 중에서 홀수를
-				a += i;		// 더 해달라는 명령
-			}
-		}
-		System.out.println("1~100까지의 홀수의 합은 = " + a);
 		
-		for(int j = 1; j <= 100; j++) {
-			if(j % 2 == 1) {
-				System.out.print(j + "\t");	
-			}
-			if(j % 10 == 0) {
-				System.out.println();		//for문 범위에서 10을 나누었을 때 나머지가 0이면 줄 바꿈을 해달라는 명령
-			}
-		}
+		char[] ch = new char[3];		//index의 개수가 3개인 char타입의 변수 ch 생성
 		
-		System.out.println();
-		System.out.println();
+		ch[0] = 'A';	//배열 ch의 첫번쨰 index에는 a
+		ch[1] = 'B';	//배열 ch의 두번쨰 index에는 b
+		ch[2] = 'C';	//배열 ch의 세번쨰 index에는 c
 		
-		/* 이중for문 사용하여 만든 소스 */
+		char data = 'A';	//증가식을 쓰기 위한 초기값 A
 		
-		String number = "";
-		
-		for (int i = 1; i < 10; i++) {
-			for(int j = 1; j < 10; j++) {
-				if(j % 2 == 1) {
-					number = String.valueOf(i);		//int 타입을 string 타입으로 강제 변경
-					System.out.print(number + j + "\t");
-				}
-			}
-			System.out.println();
+		for(int i = 0; i < ch.length; i++) {	//index의 값을 한번에 출력하는 명령
+			System.out.println("배열 ch[" + i + "]의 index 데이터 값은 " + data);
+			data ++;
 		}
 	}
 

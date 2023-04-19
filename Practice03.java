@@ -1,20 +1,24 @@
-import java.util.Scanner;
 
 public class Practice03 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		10개 배열
+//		1, 10, 100, 1000, 10000, 100000...
+//		10개 배열에 위의 값을 할당해보자
 		
-		//절대값 출력 프로그래밍
 		
-		Scanner a = new Scanner(System.in);
-		System.out.println("정수 값을 입력하시오");
+		int[] arr = new int[10];
 		
-		int Number = a.nextInt();
+		int data = 1;
 		
-		if(Number < 0) {
-			System.out.println("절대값은 "+ (-Number) +  "입니다.");
-		} else {
-			System.out.println("절대값은 "+ Number +  "입니다.");
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = data;
+			data *= 10;
+		}
+		
+		for(int j = 0; j < arr.length; j++) {
+			System.out.println("arr[" + j + "] = " + arr[j]);
 		}
 	}
 

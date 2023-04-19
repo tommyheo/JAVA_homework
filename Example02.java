@@ -2,21 +2,16 @@
 public class Example02 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		/* 1-2+3-4+5-6+7...+99-100을 구하시오 */
-		int j = 1; 
-		int sum = 0;
+		float[] f = new float[3];
+		float[] f2 = f;
+		f[0] = 3.14f;
+		f[1] = 2.34f;
+		f[2] = 9.08f;
 		
-		while (j <= 100) {
-			if(j%2 == 0) {
-				sum += -j;
-			} else if(j%2 == 1) {
-				sum += j;
-			}
-			j++;
-		}
-
-		System.out.print(sum);
+		System.out.println(f[2]);
+		System.out.println(f2[2]);
 	}
 
 }
